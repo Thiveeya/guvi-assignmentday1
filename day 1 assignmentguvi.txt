@@ -1,0 +1,59 @@
+1. write a blog on difference between HTTP1.1 Vs HTTP 2?
+ 	
+ HTTP stands for hypertext transfer protocol & it is used in client-server communication. By using HTTP user sends the request to the server & the server sends the response to the user. There are several stages of development of HTTP but we will focus mainly on HTTP/1.1 which was created in 1997 & the new one is HTTP/2 which was created in 2015.
+
+HTTP1.1:
+     1. It works on the textual format
+     2.There is head of line blocking that blocks all the request behind it untill it doesn’t get its all resources
+     3.It uses requests resource lnlining for use getting multiple pages
+     4.It compresses data by itself
+
+HTTP 2:
+     1.It works on the binary protocol
+     2.It allows multiplexing so one TCP connection is requried for multiple requests.
+     3.It uses PUSH frame by server that collects all multiple pages
+     4.It uses HPACK for data compression.
+
+
+2. Write a blog about objects and its internal representation in javascript?  
+	Objects in js:
+	       1.Objects in programming can be a combination of variables, functions, and data structures. They make code more readable.
+ This means that objects can store values, you can use objects to manipulate values and combine them into more complex objects, like arrays etc..
+	       2. Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript.
+	       3. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object.
+          	       4. the properties of an object with a simple dot-notation: 
+                                          example:  objectName.propertyName
+	       5. Like all JavaScript variables, both the object name  and property name are case sensitive.
+                              	       For example: let’s create an object named myCar and give it properties named make, model, and year as follows:
+				syntax:  var myCar = new Object();
+				             myCar.make = 'Ford';
+				             myCar.model = 'Mustang';
+				              myCar.year = 1969;
+ 	     6. Objects are sometimes called associative arrays, since each property is associated with a string value that can be used to access it. So, for example, you could access the properties of the myCar object as follows:
+				Syntax: myCar['make'] = 'Ford';
+       				            myCar['model'] = 'Mustang';
+				            myCar['year'] = 1969;
+        			Note:- Object()  can be called with or without new. Both create a new object.
+           Inherited Properties:
+             		1. Inherited properties of an object are those properties that have been inherited from the object’s prototype, as opposed to being defined for the object itself, which is known as the object’s Own property. 
+       		2.To verify if a property is an object’s Own property, we can use the hasOwnProperty method. Property Attributes Data properties in JavaScript have four attributes.
+                 Four attributes:
+                	1. value: The property’s value.
+		2.writable: When true, the property’s value can be changed
+		3.enumerable: When true, the property can be iterated over by “for-in” enumeration. Otherwise, the property is said to be non-enumerable.
+		4.configurable: If false, attempts to delete the property, change the property to be an access-or property, or change its attributes.
+                   			For example : 
+            					const object1 = new Object();
+        					object1.property1 = 42;
+ 					console.log(object1.hasOwnProperty('property1')); // true
+
+
+
+
+		
+		
+
+                
+		
+		
+		
